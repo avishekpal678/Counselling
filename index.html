@@ -65,7 +65,8 @@
         }
 
         .content img {
-            width: 100%;
+            max-width: 100%;
+            height: auto;
             border-radius: 5px;
             margin-bottom: 10px;
         }
@@ -111,6 +112,7 @@
 
         .new-page {
             background-size: cover;
+            background-repeat: no-repeat; /* Prevent background image from repeating */
             height: 100vh;
             width: 100%;
             position: relative;
@@ -125,6 +127,29 @@
         .new-page h1, .new-page p {
             color: #fff; /* Adjust text color to ensure visibility */
             margin: 0; /* Remove default margin */
+        }
+
+        /* Media query for adjusting background image on smaller screens */
+        @media only screen and (max-width: 768px) {
+            .new-page {
+                background-size: contain;
+                height: auto;
+                background-position: center;
+            }
+
+            .new-page h1 {
+                margin-top: 10vh;
+            }
+
+            .new-page img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .new-page img {
+            width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -149,12 +174,12 @@
     <div class="new-page" style="background-image: url('1.1.jpg');">
 
         <h1 style="margin-top: 80vh;">Welcome to Counselling Support Portal</h1>
-        <p>Providing expert guidance for your academic journey.</p>
-
+        
     </div>
 
-    <div class="new-page" style="background-image: url('2.jpg');">
-           </div>
+    <div class="new-page">
+	<img src="2.jpg" alt="">
+    </div>
 
     <div class="container">
         <div class="main-content">
@@ -177,8 +202,8 @@
 
         <div class="review">
             <h2>Reviews</h2>
-            <p>⭐⭐⭐⭐  </p>
-	    <p>Share your feedback in our social media platforms</P>
+            <p>⭐⭐⭐⭐</p>
+            <p>Share your feedback on our social media platforms</p>
         </div>
 
         <div class="contact">
