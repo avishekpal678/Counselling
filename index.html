@@ -56,7 +56,7 @@
         }
 
         .content {
-            flex: 0 1 30%;
+            flex: 0 1 calc(50% - 20px); /* Adjusted to half of the container width */
             background-color: #fff;
             padding: 20px;
             margin-bottom: 20px;
@@ -145,6 +145,10 @@
                 max-width: 100%;
                 height: auto;
             }
+            
+            .content {
+                flex: 0 1 100%; /* Adjusted to full width on smaller screens */
+            }
         }
 
         .new-page img {
@@ -173,12 +177,12 @@
 
     <div class="new-page" style="background-image: url('1.1.jpg');">
 
-        <h1 style="margin-top: 70vh;">Welcome to Counselling Support Portal</h1>
+        <h1 style="margin-top: 70vh; font-size:40px;">Welcome to Counselling Support Portal</h1>
         
     </div>
 
     <div class="new-page">
-	<img src="2.jpg" alt="">
+        <img src="2.jpg" alt="">
     </div>
 
     <div class="container">
@@ -214,5 +218,23 @@
             <p>Gmail: <a href="mailto:avishekpal678@gmail.com">avishekpal678@gmail.com</a></p>
         </div>
     </div>
+
+<div class="copyright">
+
+<p style="width: 100%;
+ text-align: center;
+ padding: 25px 0;
+ background: #262626;
+ font-weight: 300;
+ margin-top: 20px;
+">Copyright ©️ Avishek. Design & Developed By Avishek</p>
+</div>
+
+
+
+
+
+
 </body>
 </html>
+
