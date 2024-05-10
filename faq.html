@@ -1,34 +1,73 @@
-<div style="text-align:center; padding-top: 40px; background-color: #000;">
-<div class="header-box" style="background-color: #f2f2f2; padding: 10px;">
-    <div style="text-align:center;">
-        <a style="padding-right: 30px;" href="index.html">Home</a>
-        <a style="padding-right: 30px;" href="About Us.html">About Us</a>
-        <a style="padding-right: 30px;" href="servises.html">Services</a>
-        <a style="padding-right: 30px;" href="success.html">Success Stories</a>
-        <a style="padding-right: 30px;" href="faq.html">FAQs</a>
-        <a style="padding-right: 30px;" href="contact.html">Contact Us</a>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Comptible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counselling Support Website</title>
+   <link rel="stylesheet" href="style2.css">
+    
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  
+
+</head>
+<body>
+
+<header>
+	<a href="#" class="logo"><img src="blacklogo.png" alt=""></a>
+
+	<div class="bx bx-menu" id="menu-icon"></div>
+ 	<ul class="navbar">
+	    <li><a href="index.html">Home</a></li>
+		 
+		 <li><a href="About Us.html">About</a></li>
+		 <li><a href="servises.html">Servises</a></li>
+		<li><a href="success.html">Success Stories</a></li>
+		 <li><a href="faq.html">FAQ</a></li>
+		 <li><a href="Contact.html">Contact</a></li>
+</ul>
+<div class="header-btn">
+<a href="#" class="sign-up">Sign Up</a>
+<a href="#" class="sign-in">Sign In</a>
 </div>
 
-<div class="about-content" style="background-color: #000; padding: 200px;">
-    <h2 style="color: #fff;font-size:50px;">FAQs</h2>
+</header>
 
-<p style="font-size: 24px; line-height: 2; color: #fff;">» How does your counseling service work?<br>
+<!--------------home--------------->
+<section class="home" id="home">
+<div class="text">
+
+<h1 style="margin-top:80px;"><span>FAQ</span>s</h1>
+<p><span>⁕ How does your counseling service work? </span><br>
 
 Our counseling service begins with an in-depth analysis of your exam rank and preferences. Based on this information, we provide personalized lists of colleges that best match your profile. We also offer one-on-one counseling sessions to discuss your options and address any concerns you may have</p>
 
-    <p style="font-size: 24px; line-height: 2; color: #fff;">» Can I customize the preference lists according to my specific preferences?<br>
+<p><span>⁕ Can I customize the preference lists according to my specific preferences?</span><br>
 
 Yes, absolutely! We understand that every student is unique, and we strive to accommodate your individual preferences and requirements. During our counseling sessions, you can discuss your preferences with our counselors, who will tailor the lists accordingly to ensure they meet your expectations.</p>
 
-    <p style="font-size: 24px; line-height: 2; color: #fff;">»Do you offer refunds for your counseling services?<br>
+<p><span>⁕ Do you offer refunds for your counseling services?</span><br>
 
 No, we operate on a non-refundable policy. Once you have engaged our services and received our expertise and recommendations, we do not offer refunds. However, our team is dedicated to ensuring your satisfaction and will work with you to address any concerns or issues you may have.</p>
 
-    
+<section class="register2" id="register2">
 
+<div>
+                <a href="https://forms.gle/3CA2Cd7Ekbqi8aLn6" class="btn-register">Register Now</a>
+            
 </div>
+</section>
 
 
 
 
+
+<script>
+   document.getElementById("menu-icon").addEventListener("click", function() {
+      document.querySelector("header .navbar").classList.toggle("active");
+    });
+</script>
+<script src="main.js"></script>
+</body>
+</html>           
