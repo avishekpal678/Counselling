@@ -2,239 +2,180 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Comptible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Counselling Support Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-            color: #fff;
-        }
+   <link rel="stylesheet" href="style2.css">
+    
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #444;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 0 10px;
-        }
-
-        nav a:hover {
-            color: #ccc;
-        }
-
-        nav img {
-            width: 30px;
-            margin: 0 10px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .main-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: center;
-            margin-top: 20px;
-        }
-
-        .content {
-            flex: 0 1 calc(50% - 20px); /* Adjusted to half of the container width */
-            background-color: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .content img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-
-        .btn-register {
-            display: inline-block;
-            background-color: #f00;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-            margin-top: 20px;
-        }
-
-        .btn-register:hover {
-            background-color: #d00;
-        }
-
-        .about-content,
-        .review,
-        .contact {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        .contact p {
-            margin-bottom: 10px;
-        }
-
-        .social-links {
-            margin-top: 20px;
-        }
-
-        .social-links img {
-            width: 30px;
-            margin: 0 10px;
-        }
-
-        .main-content h2 {
-            color: #000;
-        }
-
-        .new-page {
-            background-size: cover;
-            background-repeat: no-repeat; /* Prevent background image from repeating */
-            height: 100vh;
-            width: 100%;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-            z-index: -1; /* Ensures the content appears behind the image */
-        }
-
-        .new-page h1, .new-page p {
-            color: #fff; /* Adjust text color to ensure visibility */
-            margin: 0; /* Remove default margin */
-        }
-
-        /* Media query for adjusting background image on smaller screens */
-        @media only screen and (max-width: 768px) {
-            .new-page {
-                background-size: contain;
-                height: auto;
-                background-position: center;
-            }
-
-            .new-page h1 {
-                margin-top: 10vh;
-            }
-
-            .new-page img {
-                max-width: 100%;
-                height: auto;
-            }
-            
-            .content {
-                flex: 0 1 100%; /* Adjusted to full width on smaller screens */
-            }
-        }
-
-        .new-page img {
-            width: 100%;
-            height: auto;
-        }
-    </style>
 </head>
 <body>
 
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="About Us.html">About Us</a>
-            <a href="servises.html">Services</a>
-            <a href="success.html">Success Stories</a>
-            <a href="faq.html">FAQs</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/avishekpal678?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="linkedInlogo.png" alt="LinkedIn"></a>
-            <a href="https://www.facebook.com/avishek.paul678?mibextid=ZbWKwL"><img src="facebook.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/avishek_paul678/?utm_source=qr&r=nametag"><img src="instagram.png" alt="Instagram"></a>
-        </div>
-    </header>
+<header>
+	<a href="#" class="logo"><img src="blacklogo.png" alt=""></a>
 
-    <div class="new-page" style="background-image: url('1.1.jpg');">
+	<div class="bx bx-menu" id="menu-icon"></div>
+ 	<ul class="navbar">
+	    <li><a href="#home">Home</a></li>
+		 <li><a href="#register2">Register</a></li>
+		 <li><a href="About Us.html">About</a></li>
+		 <li><a href="servises.html">Servises</a></li>
+		
+		 <li><a href="faq.html">FAQ</a></li>
+		 <li><a href="Contact.html">Contact</a></li>
+</ul>
+<div class="header-btn">
+<a href="#" class="sign-up">Sign Up</a>
+<a href="#" class="sign-in">Sign In</a>
+</div>
 
-        <h1 style="margin-top: 70vh; font-size:40px;">Welcome to Counselling Support Portal</h1>
-        
-    </div>
+</header>
 
-    <div class="new-page">
-        <img src="2.jpg" alt="">
-    </div>
+<!--------------home--------------->
+<section class="home" id="home">
+<div class="text">
 
-    <div class="container">
-        <div class="main-content">
-            <div class="content">
-                <img src="counsellingSupport.png" alt="Counselling Support Poster">
-            </div>
-            <div class="content">
-                <h2>Counselling Support for JEE Main and advance (JOSSA+CSAB) / WBJEE</h2>
-                <p style="color: #000;">Cheaper than an egg roll but infinitely more valuable for your career goal.</p>
-                <p style="color: #000;">Get counselling support for JEE Main (Jossa) and WBJEE at only 49/-.</p>
-                <p style="color: #000;">Unlock your dream college!</p>
-                <a href="https://forms.gle/3CA2Cd7Ekbqi8aLn6" class="btn-register">Register Now</a>
-            </div>
-        </div>
+<h1><span>Welcome</span> to <br> Counselling Support Portal</h1>
+<p>Unlock Your Dream College</p>
+<div class="app-stores">
+	<img src="playstore.png" alt="";>
+	<img src="ios.png" alt="";>
+</div>
+</div>
 
-        <div class="about-content">
-            <h2>About Us</h2>
-            <p>We have been providing counselling support for more than three years. Personally, I have been offering this service for the last year. Over 100 people have successfully secured admission in their desired colleges with their ranks.</p>
-        </div>
+<div class="form-container">
+<form action="">
+<div class="input-box">
+<span>Exam Name</span>
+<input type="search" name="" id="" placeholder="Enter Exam Name">
+</div>
+<div class="input-box">
+<span>Name</span>
+<input type="Name" name="" id="" placeholder="Enter Name">
+</div>
 
-        <div class="review">
-            <h2>Reviews</h2>
-            <p>⭐⭐⭐⭐</p>
-            <p>Share your feedback on our social media platforms</p>
-        </div>
+<div class="input-box">
+<span>DOB</span>
+<input type="date" name="" id="">
+</div>
 
-        <div class="contact">
-            <h2>Contact Us</h2>
-            <p>Location: Chhhatna, Bankura, West Bengal</p>
-            <p>Digital Subha Kamarkuli (SUSUNIA)</p>
-            <p>Mobile No.: 8918107347</p>
-            <p>Gmail: <a href="mailto:avishekpal678@gmail.com">avishekpal678@gmail.com</a></p>
-        </div>
-    </div>
+<input type="submit" name="" id="" class="btn">
+</form>
+</div>
+</section>
 
-<div class="copyright">
 
-<p style="width: 100%;
- text-align: center;
- padding: 25px 0;
- background: #262626;
- font-weight: 300;
- margin-top: 20px;
-">Copyright ©️ Avishek. Design & Developed By Avishek</p>
+<!-----------register---------------->
+
+<section class="register" id="register">
+<div class="heading">
+<span> How it work</span>
+<h1>How can we help you?</h1>
+</div>
+
+<div class="register-container">
+<div class="box">
+<i class='bx bxs-map'></i>
+<h2>Your Location Preferences</h2>
+<p>Taking into account your rank, hometown, and location preferences, we'll assist you in selecting colleges during counseling sessions to ensure the best fit for you and maximize your chances of getting your preferred branch.</p>
+</div>
+
+<div class="box">
+<i class='bx bx-buildings'></i>
+<h2>Top Colleges</h2>
+<p>Customized College Preference Lists: Receive personalized lists of colleges tailored to your exam rank, ensuring you have the best possible options available.Based on your exam performance, we provide comprehensive lists of colleges that match your rank, maximizing your chances of securing admission to top institutions.</p>
+</div>
+
+<div class="box">
+<i class='bx bx-laptop'></i>
+<h2>Your prefered Branch</h2>
+<p>Based on your rank and your preferred branch, we have prepared your college and branch preference list. This will increase your chances of getting your preferred branch at the best college possible.</p>
 </div>
 
 
+</section>
 
 
+<!------------registration2--------------------->
+<section class="register2" id="register2">
+<div class="heading">
+<span>Registration</span>
+<h1>Just one more step to take<br>before reaching your destination</h1>
+</div>
+
+<div class="register2-container">
+
+<div class="box">
+<div class="box-img">
+<img src="jee.jpg" alt="">
+</div>
+<h2>Counselling Support for JEE Main and advance (JOSSA)</h2>
+                <p style="color: #000;">Cheaper than an egg roll but infinitely more valuable for your career goal.</p>
+                <p style="color: #000;">Get counselling support for JEE Main (Jossa) at only 49/-.</p>
+                <h3>Unlock your dream college!</h3>
+                <a href="https://forms.gle/3CA2Cd7Ekbqi8aLn6" class="btn-register">Register Now</a>
+            
+</div>
 
 
+<div class="box">
+<div class="box-img">
+<img src="wbjee.jpg" alt="">
+</div>
+<h2>Counselling Support for WBJEE (WBJEE Counselling)</h2>
+                <p style="color: #000;">Cheaper than an egg roll but infinitely more valuable for your career goal.</p>
+                <p style="color: #000;">Get counselling support for WBJEE at only 49/-.</p>
+                <h3>Unlock your dream college!</h3>
+                <a href="https://forms.gle/3CA2Cd7Ekbqi8aLn6" class="btn-register">Register Now</a>
+            
+
+</div>
+
+
+<div class="box">
+<div class="box-img">
+<img src="both.jpg" alt="">
+</div>
+<h2>Counselling Support for Both (JOSSA + WBJEE)</h2>
+                <p style="color: #000;">Cheaper than an egg roll but infinitely more valuable for your career goal.</p>
+                <p style="color: #000;">Get counselling support for WBJEE at only 89/-.</p>
+                <h3>Unlock your dream college!</h3>
+                <a href="https://forms.gle/3CA2Cd7Ekbqi8aLn6" class="btn-register">Register Now</a>
+            
+
+
+</div>
+</section>
+
+<!-----------newsletter--->
+<section class="newsletter">
+<h2>Subscribe To Newsletter</h2>
+<div class="box">
+<input type="text" placeholder="Enter Your Email">
+<a href="#" class="btn">Subscribe</a>
+</div>
+</section>
+
+
+<!--------copyright----------->
+<div class="copyright">
+<p>&#169; copyright 2024. All Right Reserved</p>
+<div class="social">
+<a href="https://www.facebook.com/avishek.paul678?mibextid=ZbWKwL"><i class='bx bxl-facebook-circle'></i></a>
+<a href="https://www.instagram.com/avishek_paul678/?utm_source=qr&r=nametag"><i class='bx bxl-instagram-alt'></i></a>
+<a href="https://www.linkedin.com/in/avishekpal678?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin-square' ></i></a>
+<a href="#"><i class='bx bxl-twitter' ></i></a>
+</div>
+</div>
+
+<script>
+   document.getElementById("menu-icon").addEventListener("click", function() {
+      document.querySelector("header .navbar").classList.toggle("active");
+    });
+</script>
+<script src="main.js"></script>
 </body>
-</html>
-
+</html>           
